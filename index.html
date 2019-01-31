@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bugira | Better feedback for web applications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="User feedback for web applications">
+    <meta name="author" content="Bugira LLC">
+
+    <!-- Bootstrap v4.0.0-beta.2 CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+    <!-- Load our style -->
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=a36e645bfa65131e9a13">
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 4.7.0 via CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+
+
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="shortcut icon" href="/assets/images/icons/logo.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/logo.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/images/icons/logo.svg">
+
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+</head>
+<body class="green-bright page page-index-charity navbar-layout-default header-ontop" data-colour-scheme="green-bright">
+
+<!-- @plugin: page loading indicator, delete to remove loader -->
+<div class="page-loader" data-toggle="page-loader"></div>
+
+<a id="#top" href="#content" class="sr-only">Skip to content</a>
+
+<!-- ======== @Region: #header ======== -->
+<div id="header">
+    <div data-toggle="sticky">
+        <!--Header & Branding region-->
+        <div class="header py-2 pb-md-0 border-light border-op-2 header-transparent header-dark bg-dark bg-op-2 sticky-bg-op-8 sticky-border-op-1 sticky-bg-black sticky-py-lg-0">
+            <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+            <div class="header-inner container">
+                <!--branding/logo -->
+                <div class="header-brand">
+                    <a class="header-brand-text text-white" href="index.html" title="Home">
+                        <h2 class="h3 my-0 font-weight-normal">
+                            <h1 class="h2">
+                                <img src="https://bugira.com/assets/logo-71ee62e901a531745113e14adcf5364539e0108a28a7d86528a49f8a2966ce8c.svg"
+                                     alt="" style="height: 30px">
+                                <span class="header-brand-text-alt">Bugira</span>
+                            </h1>
+                        </h2>
+                    </a>
+                </div>
+                <!-- other header content -->
+                <div class="header-block order-12">
+                    <a href="/demo.html" data-toggle="scroll-link" class="btn btn-rounded btn-primary btn-bold">Demo</a>
+                </div>
+                <div class="navbar navbar-expand-md navbar-main">
+                    <!--everything within this div is hidden on mobile-->
+                    <div class="navbar-main collapse navbar-dark navbar-border-bottom-effect">
+                        <!--main navigation-->
+                        <ul class="nav navbar-nav container ">
+                            <li class="nav-item">
+                                <a href="/#top" data-toggle="scroll-link" data-dimiss="jpanel-menu"
+                                   class="nav-link text-capitalize text-white"> <span
+                                            class="nav-link-inner text-roboto font-weight-bold"
+                                            data-title="Home">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/features.html"
+                                   data-toggle="scroll-link"
+                                   data-dimiss="jpanel-menu"
+                                   class="nav-link text-capitalize text-white "
+                                >
+                                    <span class="nav-link-inner text-roboto font-weight-bold" data-title="Features">Features</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ======== @Region: #highlighted ======== -->
+    <div id="highlighted" class=" pos-md-relative">
+        <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height add the attributes: data-toggle="full-height" data-offset="#header" -->
+        <div class="overlay overlay-op-6 text-left" data-animate="fadeIn" data-bg-img="/assets/images/index/bg.jpg">
+            <div data-toggle="full-height" class="container flex-valign text-white pos-relative align-items-center">
+                <div class="pos-absolute pos-b w-80">
+                    <div class="mt-6 mt-lg-7 mb-3 d-flex align-items-center">
+                        <div class="w-lg-100">
+                            <h2 class="display-1 text-roboto font-weight-medium text-uppercase mb-0 mt-0">
+                                Better
+                            </h2>
+                            <h2 class="display-4 text-roboto font-weight-light mt-md-4-neg ">
+                                feedback for web applications
+                            </h2>
+                            <!--<p class="lead text-roboto font-weight-light">Cu eos liber utinam vituperata, ea audire deseruisse qui. Mei at assum consul causae, et vel legendos inciderint disputando. </p>-->
+                            <!--<div class=""><a href="#" data-toggle="scroll-link" class="btn btn-lg btn-primary text-roboto font-weight-medium px-4 text-sm btn-rounded"> OUR MISSION</a></div>-->
+                        </div>
+                    </div>
+                    <div class="row py-3 py-xl-5 bg-primary text-white d-lg-flex align-items-lg-center"
+                         style="background-image: url(https://bugira.com/assets/landing/bugira_interface-3b6596e1db4b7d01174c6136925cbbdc1e78ba15140dc2ee60e85bf0fb40af00.png)">
+                        <div class="col-12 p-3 py-10">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======== @Region: #content ======== -->
+    <div id="content" class="p-0">
+        <!-- About -->
+        <div id="about" class="py-3 pt-lg-6 pb-lg-0">
+            <div class="container">
+                <div data-animate-duration="0.8" class="animated animated-done" style="animation-duration: 0.8s;">
+                    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+                    <h2 class="text-center text-uppercase font-weight-bold my-0">
+                        Learn how to improve your web sites
+                    </h2>
+                    <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+                        with Bugira
+                    </h5>
+                    <hr class="mb-5 w-50 mx-auto">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 animated animated-done" data-animate-delay="0.4" data-animate-offset="100%" style="animation-delay: 0.4s;">
+                        <p class="lead"><b>A bugtracker, where users send you bugreports</b></p>
+                        <p>Let your users send you bugreports with ease. Solve the real problems. Get the most information about the bug without asking extra questions - everything to reproduce an issue is collected automatically.
+                            Help your users to get around bugs by providing support via email or live chat.</p>
+                        <p class="mb-0">
+                            Whenever users encounter issues on a website they can submit a bugreport by simply selecting text (for typo reporting).
+                            Attaching screenshots is dead easy too with build in screenshot tool.
+                            Bugira will take care of the rest. You will receive user's browser and device information, window size, and the latest activity taken on the website.
+                            All that information allows you to understand the issue with the minimal input from end users.
+                        </p>
+                    </div>
+                    <div class="col-md-6 animated animated-done" data-animate-delay="0.8" data-animate-offset="100%" style="animation-delay: 0.8s;">
+                        <!-- List Items -->
+                        <ul class="fa-ul list-unstyled mt-4 mt-md-0">
+                            <li class="mb-4">
+                                <i class="fa-li fa fa-bug text-primary"></i>
+                                <h4 class="mb-1">
+                                    What If you have a critical bug on live website?
+                                </h4>
+                                And not one ever reported it because they do not know how.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-li fa fa-tasks text-primary"></i>
+                                <h4 class="mb-1">
+                                    Do users understand the interface?
+                                </h4>
+                                User hits deadend. Where do they go from here
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-mouse-pointer text-primary"></i>
+                                <h4 class="mb-1">
+                                    Does that green button really work?
+                                </h4>
+                                When errors happen, Bugira takes a notice. Full stack trace is included in every request.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Why Bugira -->
+            <div class="bg-dark mt-3 mt-lg-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg animated b-loaded animated-done" data-animate-delay="0.1" style="animation-delay: 0.1s; background-image: url(&quot;assets/images/backgrounds/computer-screens.jpg&quot;);"></div>
+                        <div class="col-xl-6  col-lg-8 col-md-12 py-5 animated animated-done" data-animate-delay="0.3" style="animation-delay: 0.3s;">
+                            <hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary">
+                            <h2 class="display-4 text-slab text-white text-uppercase mt-0 mb-5">
+                                <span class="text-primary font-weight-bold">Bugira</span> Use Cases
+                            </h2>
+                            <div class="row mb-3">
+                                <div class="col-2 col-md-1 text-center"> <i class="fa fa-check text-primary icon-2x"></i>
+                                </div>
+                                <div class="col-10 col-md-11 text-grey">
+                                    <h4 class="font-weight-bold text-white text-uppercase">
+                                        User Feedback
+                                    </h4>
+                                    <p>Are you tired of back and forward with customers? Let users submit simple form that will capture wealth of environment metadata in one simple click. Never ask for what browser they use again!</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2 col-md-1 text-center"> <i class="fa fa-check text-primary icon-2x"></i>
+                                </div>
+                                <div class="col-10 col-md-11 text-grey">
+                                    <h4 class="font-weight-bold text-white text-uppercase">
+                                        Client Feedback
+                                    </h4>
+                                    <p>Are you working with clients on another prototype? Let them submit feedback with ease. All information is captured in Bugira and organised in form of tickets for quick prioritorisation and triage.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2 col-md-1 text-center"> <i class="fa fa-check text-primary icon-2x"></i>
+                                </div>
+                                <div class="col-10 col-md-11 text-grey">
+                                    <h4 class="font-weight-bold text-white text-uppercase">
+                                        User Acceptence Testing
+                                    </h4>
+                                    <p>Are you still gathering UAT feedback in spreadsheets? There is a better option. Bugira widget allows testers submit feedback right inside testing session as soon as the issue arise. Testers can submit screenshots and descriptions and Bugira will take care pf the rest.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-0">
+        </div>
+        <!-- Features -->
+        <div id="features" class="container py-4 py-lg-6">
+            <div data-animate-duration="0.6" class="animated animated-done" style="animation-duration: 0.6s;">
+                <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+                <h2 class="text-center text-uppercase font-weight-bold my-0">
+                    Bugira Features
+                </h2>
+                <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+                    Collect, interract, and manage user feedback
+                </h5>
+                <hr class="mb-5 w-50 mx-auto">
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 py-2 animated animated-done" data-animate="fadeIn" data-animate-delay="0.1" style="animation-delay: 0.1s;">
+                    <i class="fa fa-tachometer icon-5x text-primary"></i>
+                    <h4 class="mt-2">
+                        Website Widget
+                    </h4>
+                    <p>Add widget to any site in minutes</p>
+                </div>
+                <div class="col-lg-4 py-2 animated animated-done" data-animate="fadeIn" data-animate-delay="0.2" style="animation-delay: 0.2s;">
+                    <i class="fa fa-envelope-o icon-5x text-primary"></i>
+                    <h4 class="mt-2">
+                        Email Support
+                    </h4>
+                    <p>Collect user feedback via email.</p>
+                </div>
+                <div class="col-lg-4 py-2 animated animated-done" data-animate="fadeIn" data-animate-delay="0.3" style="animation-delay: 0.3s;">
+                    <i class="fa fa-tasks icon-5x text-primary"></i>
+                    <h4 class="mt-2">
+                        Ticketing System
+                    </h4>
+                    <p>Manage user feedback inside Bugira.</p>
+                </div>
+                <div class="col-lg-12 py-2 animated animated-done" data-animate="fadeIn" data-animate-delay="0.4" style="animation-delay: 0.4s;">
+                    <a href="/features.html" class="btn btn-xlg btn-rounded btn-primary mt-4">More Bugira Features <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Link -->
+        <div class="p-3 p-lg-5 bg-dark text-center" style="position: relative;">
+            <div class="container">
+                <h2 class="text-white display-4 text-shadow">
+                    Stop <span class="font-italic font-weight-bold">guessing</span>. Let users tell you!
+                </h2>
+                <a href="#pricing" class="btn btn-xlg btn-rounded btn-primary mt-4">Get Bugira!</a>
+
+            </div>
+        </div>
+
+        <div id="pricing" class="bg-light text-center py-3 py-lg-6">
+            <div class="container">
+                <form action="https://bugira.us17.list-manage.com/subscribe/post?u=317cbf969bfca009da2bf1ab8&amp;id=401e22a809" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">
+                            <h2 class="text-center text-uppercase font-weight-bold my-0">Better feedback service is coming!</h2>
+                            <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+                                Sign up for <b>PRIVATE BETA</b>
+                            </h5>
+                            <hr class="mb-5 w-50 mx-auto">
+                            <div class="form-group animated animated-done" data-animate="fadeInDown" data-animate-delay="0.2" style="animation-delay: 0.2s;">
+                                <label class="sr-only" for="contact-name">Sign up for <b>PRIVATE BETA</b></label>
+                                <input type="email" class="form-control" id="mce-EMAIL" placeholder="email address" tabindex="0" required="">
+                            </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_317cbf969bfca009da2bf1ab8_401e22a809" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xlg btn-rounded btn-primary mt-4"></div>
+                        </label></div>
+                </form>
+            </div>
+        </div>
+
+        <!--Customer testimonial-->
+        <div class="p-3 py-lg-6 bg-dark">
+            <div class="container">
+                <div data-animate="fadeIn" data-animate-duration="0.6" class="animated animated-done" style="animation-duration: 0.6s;">
+                    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+                    <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
+                        Highly Recommended
+                    </h2>
+                    <h5 class="text-center font-weight-light mt-2 mb-0 text-grey">
+                        See what our customers have to say
+                    </h5>
+                    <hr class="mb-5 w-50 mx-auto">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 d-md-flex">
+                        <blockquote class="blockquote-bubble text-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.1" style="animation-delay: 0.1s;">
+                            <p class="blockquote-bubble-content bg-white">"It's totally awesome, we're could imagine life without it!"</p>
+                            <small class="text-grey">
+                                <img src="/assets/images/people/jimi@2x.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" width="50" height="50">
+                                Jimi Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@mrjimi</a>
+                            </small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4 d-md-flex">
+                        <blockquote class="blockquote-bubble text-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.2" style="animation-delay: 0.2s;">
+                            <p class="blockquote-bubble-content bg-white text-center">"10 out of 10, highly recommended!"</p>
+                            <small class="text-grey">
+                                <img src="/assets/images/people/steve@2x.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" width="50" height="50">
+                                Steve Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">Founder of Apple</a>
+                            </small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4 d-md-flex">
+                        <blockquote class="blockquote-bubble text-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.3" style="animation-delay: 0.3s;">
+                            <p class="blockquote-bubble-content bg-white text-center">"Our productivity &amp; sales are up! Couldn't be happier with this product!"</p>
+                            <small class="text-grey">
+                                <img src="/assets/images/people/adele@2x.jpg" alt="Adele Bloggs" class="rounded-circle mr-2" width="50" height="50">
+                                Adele Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@iamadele</a>
+                            </small>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact form -->
+        <div id="contact">
+            <div class="container p-4 py-lg-5">
+                <div data-animate="fadeIn" data-animate-duration="0.6" class="animated animated-done" style="animation-duration: 0.6s;">
+                    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+                    <h2 class="text-center text-uppercase font-weight-bold my-0">
+                        See For Youself
+                    </h2>
+                    <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+                        Take Bugira for a test drive. Checkout our demo website
+                    </h5>
+                    <hr class="mb-5 w-50 mx-auto">
+                </div>
+                <div class="row animated animated-done" data-animate="fadeIn" data-animate-delay="0.1" style="animation-delay: 0.1s;">
+                    <div class="col-md-12 text-center">
+                        <a href="/demo.html" class="btn btn-xlg btn-rounded btn-primary mt-4">Start Demo!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ======== @Region: #footer ======== -->
+<footer id="footer" class="py-3">
+    <div class="container">
+        <div class="row">
+            <!--@todo: replace with company copyright details-->
+            <div class="col-md-6">
+                <p class="mb-0 text-sm">Copyright 2019 © Bugira</p>
+                <ul class="list-inline footer-links mb-0 text-sm">
+                    <li class="list-inline-item"><a href="/terms.html">Terms</a></li>
+                    <li class="list-inline-item"><a href="/privacy.html">Privacy</a></li>
+                    <li class="list-inline-item"><a href="mailto:hello@bugira.com">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 flex-valign">
+                <div class="float-md-right ml-md-auto">
+                    <!--@todo: replace with company social media details-->
+                    <a href="https://twitter.com/bugiratracker" target="_blank"
+                       class="btn btn-sm btn-icon btn-dark btn-rounded"><i class="fa fa-twitter"></i></a>
+                    <a href="#top" class="btn btn-sm btn-icon btn-dark btn-rounded" title="Back to top"><i
+                                class="fa fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude"></div>
+
+<!--jQuery 3.2.1 via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Popper 1.9.3 via CDN, needed for Bootstrap Tooltips & Popovers -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.9.3/umd/popper.min.js"></script>
+
+<!-- Bootstrap v4.0.0-beta JS via CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!--Bugira scripts mainly used to trigger libraries/plugins -->
+<script src="/assets/build/js/main.js?id=a7252c8fc7d0b4a69741"></script>
+</body>
+</html>
