@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
     <!-- Load our style -->
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=1a3b6268419b6284386f">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=925d9183f18b0f7b66f9">
     <!-- Optional: ICON SETS -->
     <!-- Iconset: Font Awesome 4.7.0 via CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
 
     <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icons/logo.ico">
     <link rel="shortcut icon" href="/assets/images/icons/logo.svg">
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/logo.svg">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/logo.svg">
@@ -107,12 +108,10 @@
             <div data-toggle="full-height" class="container flex-valign text-white pos-relative align-items-center">
                 <div class="pos-absolute pos-b w-80">
                     <div class="mt-6 mt-lg-7 mb-3 d-flex align-items-center">
-                        <div class="w-lg-100">
-                            <h2 class="display-1 text-roboto font-weight-medium text-uppercase mb-0 mt-0">
-                                Better
-                            </h2>
-                            <h2 class="display-4 text-roboto font-weight-light mt-md-4-neg ">
-                                feedback for web applications
+                    <!-- <img src="/assets/images/icons/logo.svg" style="width: 125px; height: 125px" class="mt-2 mb-2" alt=""> -->
+                        <div class="w-lg-100 text-center">
+                            <h2 class="display-4 text-slab font-weight-medium">
+                                Better Feedback for Web Applications
                             </h2>
                             <!--<p class="lead text-roboto font-weight-light">Cu eos liber utinam vituperata, ea audire deseruisse qui. Mei at assum consul causae, et vel legendos inciderint disputando. </p>-->
                             <!--<div class=""><a href="#" data-toggle="scroll-link" class="btn btn-lg btn-primary text-roboto font-weight-medium px-4 text-sm btn-rounded"> OUR MISSION</a></div>-->
@@ -148,13 +147,14 @@
                     <hr class="mb-5 w-50 mx-auto">
                 </div>
                 <div class="row">
-                    <div class="col-md-6 animated animated-done" data-animate-delay="0.4" data-animate-offset="100%" style="animation-delay: 0.4s;">
-                        <p class="lead"><b>A bugtracker, where users send you bugreports</b></p>
-                        <p>Let your users send you bugreports with ease. Solve the real problems. Get the most information about the bug without asking extra questions - everything to reproduce an issue is collected automatically.
-                            Help your users to get around bugs by providing support via email or live chat.</p>
-                        <p class="mb-0">
-                            Whenever users encounter issues on a website they can submit a bugreport by simply selecting text (for typo reporting).
-                            Attaching screenshots is dead easy too with build in screenshot tool.
+                    <div class="col-md-6 animated text-slab animated-done" data-animate-delay="0.4" data-animate-offset="100%" style="animation-delay: 0.4s;">
+                        <h4 class="p-1">Bugtracker where users send you bugreports</h4>
+                        <p class="p-1">Let your users send you bugreports with ease. Get the most information about the bug without asking extra questions &dash; everything to reproduce an issue is collected automatically.</p>
+                        <p class="p-1">
+                            Whenever users encounter issues on a website they can submit a bugreport by simply selecting a text (for typo reporting).
+                            Attaching screenshots is dead easy too with built in screenshot tool.
+                        </p>
+                            <p class="mb-0 p-1">
                             Bugira will take care of the rest. You will receive user's browser and device information, window size, and the latest activity taken on the website.
                             All that information allows you to understand the issue with the minimal input from end users.
                         </p>
@@ -162,26 +162,38 @@
                     <div class="col-md-6 animated animated-done" data-animate-delay="0.8" data-animate-offset="100%" style="animation-delay: 0.8s;">
                         <!-- List Items -->
                         <ul class="fa-ul list-unstyled mt-4 mt-md-0">
-                            <li class="mb-4">
+                            <li class="mb-4 text-large">
                                 <i class="fa-li fa fa-bug text-primary"></i>
-                                <h4 class="mb-1">
+                                <h4 class="mb-1 text-slab">
                                     What If you have a critical bug on live website?
                                 </h4>
                                 And not one ever reported it because they do not know how.
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-4 mt-4">
                                 <i class="fa-li fa fa-tasks text-primary"></i>
                                 <h4 class="mb-1">
                                     Do users understand the interface?
                                 </h4>
-                                User hits deadend. Where do they go from here
+                                User hits deadend. Where do they go from here?
                             </li>
-                            <li>
+                            <li class="mb-4 mt-4">
+                                <i class="fa-li fa fa-comment text-primary"></i>
+                                <h4 class="mb-1">
+                                    Is there anyone to ask?
+                                </h4>
+                                How hard for a new user to get a support from a team.
+                            </li>
+
+                            <li class="mt-4 mb-4">
                                 <i class="fa-li fa fa-mouse-pointer text-primary"></i>
                                 <h4 class="mb-1">
                                     Does that green button really work?
                                 </h4>
-                                When errors happen, Bugira takes a notice. Full stack trace is included in every request.
+                                Even if no errors happen it doesn't mean it works for end user.
+                            </li>
+                            <li class="mt-4 text-slab text-secondary">
+                                <h3>Stop guessing. Let users tell you!</h3>
+
                             </li>
                         </ul>
                     </div>
@@ -191,7 +203,7 @@
             <div class="bg-dark mt-3 mt-lg-6">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-3 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg animated b-loaded animated-done" data-animate-delay="0.1" style="animation-delay: 0.1s; background-image: url(&quot;assets/images/backgrounds/computer-screens.jpg&quot;);"></div>
+                        <div class="col-xl-4 col-lg-3 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg animated b-loaded animated-done" data-animate-delay="0.1" style="animation-delay: 0.1s; background-image: url(assets/images/backgrounds/office.jpg);"></div>
                         <div class="col-xl-6  col-lg-8 col-md-12 py-5 animated animated-done" data-animate-delay="0.3" style="animation-delay: 0.3s;">
                             <hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary">
                             <h2 class="display-4 text-slab text-white text-uppercase mt-0 mb-5">
@@ -268,7 +280,7 @@
                     <p>Manage user feedback inside Bugira.</p>
                 </div>
                 <div class="col-lg-12 py-2 animated animated-done" data-animate="fadeIn" data-animate-delay="0.4" style="animation-delay: 0.4s;">
-                    <a href="/features.html" class="btn btn-xlg btn-rounded btn-primary mt-4">More Bugira Features <i class="fa fa-chevron-right"></i></a>
+                    <a href="/features.html" class="btn btn-xlg btn-rounded btn-secondary mt-4">More Bugira Features <i class="fa fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -276,10 +288,9 @@
         <!-- Demo Link -->
         <div class="p-3 p-lg-5 bg-dark text-center" style="position: relative;">
             <div class="container">
-                <h2 class="text-white display-4 text-shadow">
-                    Stop <span class="font-italic font-weight-bold">guessing</span>. Let users tell you!
-                </h2>
-                <a href="#pricing" class="btn btn-xlg btn-rounded btn-primary mt-4">Get Bugira!</a>
+                <h3 class="text-white m-4">Still wondering how it works?</h3>
+                <a href="https://bugira.com/demo" class="btn btn-xlg btn-rounded btn-light m-2">Try Instant Demo</a>
+                <p class="text-white mt-2">No registration needed.</p>
 
             </div>
         </div>
@@ -289,19 +300,19 @@
                 <form action="https://bugira.us17.list-manage.com/subscribe/post?u=317cbf969bfca009da2bf1ab8&amp;id=401e22a809" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
                     <div id="mc_embed_signup_scroll">
                         <label for="mce-EMAIL">
-                            <h2 class="text-center text-uppercase font-weight-bold my-0">Better feedback service is coming!</h2>
-                            <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
-                                Sign up for <b>PRIVATE BETA</b>
-                            </h5>
-                            <hr class="mb-5 w-50 mx-auto">
+                            <h4 class="text-center text-muted font-weight-bold my-0">Better feedback service is coming!</h4>
+                            <hr class="w-50 mx-auto">
+                            <h2 class="text-center mt-2 mb-4 text-slab text-uppercase ">
+                                Sign up for private beta
+                            </h2>
                             <div class="form-group animated animated-done" data-animate="fadeInDown" data-animate-delay="0.2" style="animation-delay: 0.2s;">
                                 <label class="sr-only" for="contact-name">Sign up for <b>PRIVATE BETA</b></label>
-                                <input type="email" class="form-control" id="mce-EMAIL" placeholder="email address" tabindex="0" required="">
+                                <input type="email" class="form-control" id="mce-EMAIL" placeholder="Enter your email address" tabindex="0" required="">
                             </div>
 
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_317cbf969bfca009da2bf1ab8_401e22a809" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xlg btn-rounded btn-primary mt-4"></div>
+                            <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xlg btn-rounded btn-primary mt-4 btn-block"></div>
                         </label></div>
                 </form>
             </div>
@@ -361,7 +372,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
 <!--Bugira scripts mainly used to trigger libraries/plugins -->
-<script src="/assets/build/js/main.js?id=4c9330ac1be34f30feef"></script>
+<script src="/assets/build/js/main.js?id=1ad11a3680e50abfb714"></script>
 
 
     <script>
