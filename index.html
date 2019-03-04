@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
     <!-- Load our style -->
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=4ed66eba69b78f680892">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=fcacc923317c3a4777d6">
     <!-- Optional: ICON SETS -->
     <!-- Iconset: Font Awesome 4.7.0 via CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -70,7 +70,7 @@
                     <a class="header-brand-text text-white" href="index.html" title="Home">
                         <h2 class="h3 my-0 font-weight-normal">
                             <h1 class="h2">
-                                <img src="https://bugira.com/assets/logo-71ee62e901a531745113e14adcf5364539e0108a28a7d86528a49f8a2966ce8c.svg"
+                                <img src="/assets/images/icons/logo.svg"
                                      alt="" style="height: 30px">
                                 <span class="header-brand-text-alt">Bugira</span>
                             </h1>
@@ -79,7 +79,7 @@
                 </div>
                 <!-- other header content -->
                 <div class="header-block order-12">
-                    <a href="https://bugira.com/demo" data-toggle="scroll-link" class="btn btn-rounded btn-secondary btn-bold">Instant Demo</a>
+                    <a href="https://bugira.app/demo" data-toggle="scroll-link" class="btn btn-rounded btn-secondary btn-bold">Instant Demo</a>
                 </div>
                 <div class="navbar navbar-expand-md navbar-main">
                     <!--everything within this div is hidden on mobile-->
@@ -110,17 +110,26 @@
     </div>
 </div>
 
-    <!-- ======== @Region: #highlighted ======== -->
+    <div id="bugira-widget"></div><script type="text/javascript" crossorigin="anonymous">
+  var __bugira_config={
+    "api_key":"m071c8a053tj",
+    label_button: "Contact Us",
+    label_description: "How can we help you?"    
+  };
+
+
+  !function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://cdn.jsdelivr.net/npm/bugira-widget@latest/dist/bugira.min.js?" + (+ new Date),(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}();
+</script>    <!-- ======== @Region: #highlighted ======== -->
     <div id="highlighted" class=" pos-md-relative">
         <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height add the attributes: data-toggle="full-height" data-offset="#header" -->
         <div class="overlay overlay-op-6 text-left" data-animate="fadeIn" data-bg-img="/assets/images/index/bg.jpg">
             <div data-toggle="full-height" class="container flex-valign text-white pos-relative align-items-center">
                 <div class="pos-absolute pos-b w-80">
                     <div class="mt-6 mt-lg-7 mb-3 d-flex align-items-center">
-                    <!-- <img src="/assets/images/icons/logo.svg" style="width: 125px; height: 125px" class="mt-2 mb-2" alt=""> -->
+                    <img src="/assets/images/icons/logo.svg" style="width: 125px; height: 125px" class="mt-2 mb-2" alt="">
                         <div class="w-lg-100 text-center">
                             <h2 class="display-4 text-slab font-weight-medium">
-                                Better Feedback for Web Applications
+                                Valueble Feedback for Web Applications
                             </h2>
                             <!--<p class="lead text-roboto font-weight-light">Cu eos liber utinam vituperata, ea audire deseruisse qui. Mei at assum consul causae, et vel legendos inciderint disputando. </p>-->
                             <!--<div class=""><a href="#" data-toggle="scroll-link" class="btn btn-lg btn-primary text-roboto font-weight-medium px-4 text-sm btn-rounded"> OUR MISSION</a></div>-->
@@ -255,6 +264,31 @@
             <hr class="my-0">
         </div>
 
+<!--Customer testimonial-->
+<div class="p-2 py-lg-4 bg-grey">
+    <div class="container">
+        <div data-animate="fadeIn" data-animate-duration="0.6" class="animated animated-done" style="animation-duration: 0.6s;">
+            <h3 class="text-center text-uppercase font-weight-bold my-0">
+                One App To Rule Them All
+            </h3>
+        </div>
+        <div class="row">
+            <div class="mx-auto w-50 mt-5 mb-5 text-secondary">
+
+                <table class="points">
+                    <tr>
+                <th><h4>Bugtracking</h4></th><td><i class="fa icon-2x text-primary fa-check"></i></td></tr>
+                <th><h4>User Feedback</h4></th><td><i class="fa icon-2x text-primary fa-check"></i></td></tr>
+                <th><h4>Task Management</h4></th><td><i class="fa icon-2x text-primary fa-check"></i></td></tr>
+                <th><h4>Email Support</h4></th><td><i class="fa icon-2x text-primary fa-check"></i></td></tr>
+                <th><h4>Chat Support</h4></th><td><i class="fa icon-2x text-primary fa-check"></i></td></tr>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Projects carousel -->
         <div class="p-3 py-lg-6">
@@ -295,7 +329,7 @@
                 <div class="row">
                     <div class="col-12">
                         <img style="width: 100%;"
-                             src="https://bugira.com/assets/landing/wireflow-465078ae4f90b1fc8cb56c02ec4a965743c51ee7e078d36267c25fc84c57614f.jpg"
+                             src="/assets/images/index/wireflow.jpg"
                              alt="Wireflow">
                     </div>
                 </div>
@@ -336,12 +370,11 @@
     </div>
 </div>
 
+
         
         
     </div>
-
-
-        <!-- Demo Link -->
+    <!-- Demo Link -->
         <div class="p-3 p-lg-5 bg-dark text-center" style="position: relative;">
             <div class="container">
                 <h3 class="text-white m-4">Still wondering how it works?</h3>
@@ -349,9 +382,7 @@
                 <p class="text-white mt-2">No registration needed.</p>
 
             </div>
-        </div>
-
-    <div class="modal fade" id="youtubeVideoModal">
+        </div>    <div class="modal fade" id="youtubeVideoModal">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background-color: transparent">
                 <div class="modal-body">
@@ -401,7 +432,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
 <!--Bugira scripts mainly used to trigger libraries/plugins -->
-<script src="/assets/build/js/main.js?id=1ad11a3680e50abfb714"></script>
+<script src="/assets/build/js/main.js?id=4c9330ac1be34f30feef"></script>
 
 
     <script>
